@@ -18,20 +18,17 @@ const services = [
 ];
 
 const locations = [
-  'deltona',
-  'orlando',
+  // Removed: deltona, orlando, casselberry, debary, tavares (now have dedicated SEO pages)
   'daytona-beach',
   'sanford',
   'lake-mary',
   'winter-park',
   'apopka',
   'altamonte-springs',
-  'casselberry',
   'maitland',
   'winter-garden',
   'oviedo',
   'winter-springs',
-  'debary',
   'deland',
   'orange-city',
   'port-orange',
@@ -42,7 +39,6 @@ const locations = [
   'celebration',
   'clermont',
   'mount-dora',
-  'tavares',
   'eustis',
   'ocoee',
   'winter-haven',
@@ -66,6 +62,12 @@ export default function sitemap() {
     },
     {
       url: `${BASE_URL}/about`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/about-us/`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.8,
@@ -106,6 +108,98 @@ export default function sitemap() {
       changeFrequency: 'monthly',
       priority: 0.6,
     },
+    {
+      url: `${BASE_URL}/privacy-policy/`,
+      lastModified: currentDate,
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+    {
+      url: `${BASE_URL}/terms-of-service/`,
+      lastModified: currentDate,
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+  ];
+
+  // SEO-optimized location-specific pages
+  const seoLocationPages = [
+    {
+      url: `${BASE_URL}/pressure-washing-ocala-fl`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    {
+      url: `${BASE_URL}/pressure-washing-deltona-kjs-supreme-pressure-washing-llc/`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/pressure-washing-in-seminole-county-fl/`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    {
+      url: `${BASE_URL}/pressure-washing-debary-fl-2/`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    {
+      url: `${BASE_URL}/pressure-washing-casselberry-fl/`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    {
+      url: `${BASE_URL}/pressure-washing-tavares-fl/`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    {
+      url: `${BASE_URL}/roof-cleaning-ocala-fl/`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    {
+      url: `${BASE_URL}/pressure-washing-orlando-fl/`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/gutter-cleaning-winter-garden-fl/`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+  ];
+
+  // Informational/Guide pages
+  const guidePagesPages = [
+    {
+      url: `${BASE_URL}/how-to-start-a-gutter-cleaning-business/`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${BASE_URL}/pressure-washing-costs`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    },
+    {
+      url: `${BASE_URL}/pressure-washing-vs-soft-washing-deltona/`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    },
   ];
 
   // Service pages (14 pages)
@@ -137,5 +231,12 @@ export default function sitemap() {
     }
   }
 
-  return [...staticPages, ...servicePages, ...locationPages, ...serviceLocationPages];
+  return [
+    ...staticPages,
+    ...seoLocationPages,
+    ...guidePagesPages,
+    ...servicePages,
+    ...locationPages,
+    ...serviceLocationPages
+  ];
 }

@@ -24,8 +24,8 @@ export default function Footer() {
   ];
 
   const locations = [
-    { name: 'Deltona', href: '/locations/deltona' },
-    { name: 'Orlando', href: '/locations/orlando' },
+    { name: 'Deltona', href: '/pressure-washing-deltona-kjs-supreme-pressure-washing-llc/' },
+    { name: 'Orlando', href: '/pressure-washing-orlando-fl/' },
     { name: 'Sanford', href: '/locations/sanford' },
     { name: 'Daytona Beach', href: '/locations/daytona-beach' },
     { name: 'DeLand', href: '/locations/deland' },
@@ -84,7 +84,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-gray-900 text-gray-300" itemScope itemType="https://schema.org/LocalBusiness">
       {/* Main Footer Content */}
       <div className="container mx-auto px-4 py-12 md:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
@@ -92,49 +92,55 @@ export default function Footer() {
           {/* Business Information */}
           <div className="sm:col-span-2 lg:col-span-1">
             {/* Logo & Name */}
-            <Link href="/" className="flex items-center gap-3 mb-6">
+            <Link href="/" className="flex items-center gap-3 mb-6" aria-label="KJS Supreme Pressure Washing Home">
               <div className="relative w-12 h-12 bg-white rounded-lg p-1 flex-shrink-0">
                 <Image
                   src="/logo.webp"
                   alt="KJS Supreme Pressure Washing Logo"
                   fill
                   className="object-contain"
+                  itemProp="logo"
                 />
               </div>
               <div>
-                <span className="text-white text-lg font-bold block">KJS Supreme</span>
-                <span className="text-gray-400 text-sm">Pressure Washing LLC</span>
+                <span className="text-white text-lg font-bold block" itemProp="name">KJS Supreme Pressure Washing LLC</span>
+                <span className="text-gray-400 text-sm" itemProp="description">Professional Exterior Cleaning</span>
               </div>
             </Link>
 
             {/* Contact Info */}
             <div className="space-y-4">
               <a
-                href="tel:+12138416924"
+                href="tel:+13862102969"
                 className="flex items-center gap-3 text-gray-300 hover:text-blue-400 transition-colors group min-h-[48px]"
+                itemProp="telephone"
+                aria-label="Call KJS Supreme Pressure Washing at (386) 210-2969"
               >
                 <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center group-hover:bg-blue-500 transition-colors flex-shrink-0">
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                 </div>
                 <div>
                   <span className="text-sm text-gray-400 block">Call Us</span>
-                  <span className="font-semibold">(213) 841-6924</span>
+                  <span className="font-semibold">(386) 210-2969</span>
                 </div>
               </a>
 
-              <div className="flex items-start gap-3 text-gray-300">
+              <div className="flex items-start gap-3 text-gray-300" itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
                 <div className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
                 <div>
                   <span className="text-sm text-gray-400 block">Located In</span>
-                  <span className="font-semibold">1757 S Village Dr</span>
-                  <span className="block text-sm">Deltona, FL 32725</span>
+                  <span className="font-semibold" itemProp="streetAddress">1757 S Village Dr</span>
+                  <span className="block text-sm">
+                    <span itemProp="addressLocality">Deltona</span>, <span itemProp="addressRegion">FL</span> <span itemProp="postalCode">32725</span>
+                  </span>
+                  <meta itemProp="addressCountry" content="US" />
                 </div>
               </div>
             </div>
@@ -243,9 +249,23 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <p className="text-xs text-gray-600 text-center mt-4">
-            Professional Pressure Washing Services in Deltona, Orlando, Sanford & Central Florida
-          </p>
+          <div className="text-xs text-gray-600 text-center mt-4 space-y-2">
+            <p itemProp="areaServed" itemScope itemType="https://schema.org/GeoCircle">
+              <span itemProp="description">Professional Pressure Washing Services in </span>
+              <span itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+                <span itemProp="addressLocality">Deltona</span>,
+                <span itemProp="addressLocality"> Orlando</span>,
+                <span itemProp="addressLocality"> Sanford</span>,
+                <span itemProp="addressLocality"> Daytona Beach</span> &
+                <span itemProp="addressRegion"> Central Florida</span>
+              </span>
+            </p>
+            <p className="text-gray-700">
+              Licensed & Insured | House Washing | Roof Cleaning | Driveway Cleaning | Commercial Pressure Washing
+            </p>
+            <meta itemProp="priceRange" content="$$" />
+            <meta itemProp="url" content="https://kjsupremepressurewashing.com" />
+          </div>
         </div>
       </div>
     </footer>
