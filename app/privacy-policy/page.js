@@ -190,7 +190,7 @@ export default function PrivacyPolicyPage() {
                 </ul>
 
                 <p className="text-gray-700 mt-4">
-                  To exercise these rights, please contact us at <a href="tel:+13862102969" className="text-blue-600 hover:text-blue-800">(386) 210-2969</a> or <a href="mailto:info@kjsupremepressurewashing.com" className="text-blue-600 hover:text-blue-800">info@kjsupremepressurewashing.com</a>.
+                  To exercise these rights, please contact us at <a href="tel:+12138416924" className="text-blue-600 hover:text-blue-800">(213) 841-6924</a> or <a href="mailto:info@kjsupremepressurewashing.com" className="text-blue-600 hover:text-blue-800">info@kjsupremepressurewashing.com</a>.
                 </p>
               </section>
 
@@ -249,7 +249,7 @@ export default function PrivacyPolicyPage() {
                   <p className="font-semibold text-gray-900 mb-2">KJS Supreme Pressure Washing LLC</p>
                   <p className="text-gray-700">Deltona, Florida</p>
                   <p className="text-gray-700 mt-2">
-                    Phone: <a href="tel:+13862102969" className="text-blue-600 hover:text-blue-800">(386) 210-2969</a>
+                    Phone: <a href="tel:+12138416924" className="text-blue-600 hover:text-blue-800">(213) 841-6924</a>
                   </p>
                   <p className="text-gray-700">
                     Email: <a href="mailto:info@kjsupremepressurewashing.com" className="text-blue-600 hover:text-blue-800">info@kjsupremepressurewashing.com</a>

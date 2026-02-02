@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import type { Metadata } from 'next';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 // FAQ Schema for Home Page
 const faqSchema = {
@@ -1040,6 +1041,9 @@ export default function Home() {
           })
         }}
       />
+
+      {/* WhatsApp Floating Button */}
+      <WhatsAppButton />
     </>
   );
 }

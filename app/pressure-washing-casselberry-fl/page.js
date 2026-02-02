@@ -42,7 +42,7 @@ export default function PressureWashingCasselberryPage() {
               <p className="text-xl md:text-2xl mb-8 text-blue-100">Trusted exterior cleaning for Casselberry homes and businesses</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/contact" className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors text-lg">Get Free Quote</Link>
-                <Link href="tel:+13862102969" className="bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-800 transition-colors text-lg border-2 border-white">Call (386) 210-2969</Link>
+                <Link href="tel:+12138416924" className="bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-800 transition-colors text-lg border-2 border-white">Call (213) 841-6924</Link>
               </div>
             </div>
           </div>
@@ -122,7 +122,7 @@ export default function PressureWashingCasselberryPage() {
               <p className="text-xl mb-8 text-blue-100">Professional pressure washing with guaranteed results. Get your free estimate now.</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/contact" className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors text-lg">Request Free Quote</Link>
-                <Link href="tel:+13862102969" className="bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-800 transition-colors text-lg border-2 border-white">Call: (386) 210-2969</Link>
+                <Link href="tel:+12138416924" className="bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-800 transition-colors text-lg border-2 border-white">Call: (213) 841-6924</Link>
               </div>
             </div>
           </div>

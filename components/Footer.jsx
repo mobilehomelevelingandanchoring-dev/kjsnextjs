@@ -111,10 +111,10 @@ export default function Footer() {
             {/* Contact Info */}
             <div className="space-y-4">
               <a
-                href="tel:+13862102969"
+                href="tel:+12138416924"
                 className="flex items-center gap-3 text-gray-300 hover:text-blue-400 transition-colors group min-h-[48px]"
                 itemProp="telephone"
-                aria-label="Call KJS Supreme Pressure Washing at (386) 210-2969"
+                aria-label="Call KJS Supreme Pressure Washing at (213) 841-6924"
               >
                 <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center group-hover:bg-blue-500 transition-colors flex-shrink-0">
                   <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -123,7 +123,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <span className="text-sm text-gray-400 block">Call Us</span>
-                  <span className="font-semibold">(386) 210-2969</span>
+                  <span className="font-semibold">(213) 841-6924</span>
                 </div>
               </a>
 
