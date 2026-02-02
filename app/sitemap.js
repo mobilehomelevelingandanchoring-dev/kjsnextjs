@@ -200,6 +200,12 @@ export default function sitemap() {
       changeFrequency: 'monthly',
       priority: 0.75,
     },
+    {
+      url: `${BASE_URL}/exterior-cleaning-guide-deltona`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
   ];
 
   // Service pages (14 pages)
